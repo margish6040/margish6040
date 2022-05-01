@@ -5,6 +5,7 @@ function onSignIn(googleUser) {
   $("#profile").attr("src", profile.getImageUrl());
   $(".data").css("display", "block");
   $(".g-signin2").css("display", "none");
+  $("#navbar").css("display", "block");
 }
 
 function signOut() {
@@ -13,5 +14,6 @@ function signOut() {
     alert("Successfully logged-out");
     $(".g-signin2").css("display", "block");
     $(".data").css("display", "none");
+    $("#navbar").css("display", "none");
   });
 }
