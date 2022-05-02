@@ -32,29 +32,27 @@
                     <a class="nav-link active" aria-current="page" href="/pages/profile.html">Profile</a>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/pages/send-mail.html">Send mail</a>
+                    <a class="nav-link" href="/pages/send-mail.html">Send mail</a>
                 </li>
               </ul>
-              <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+              <button type="button" class="btn btn-danger" onclick="signOut()">Sign Out</button>
+              
             </div>
           </div>
     </nav>
     
-    <div class="container-fluid">
+
+    <div class="bg-primary bg-opacity-50 container-fluid" style="height: 100vh;" id="body-section">
         <div class="data">
-            <p>Name : </p>
-            <span id="name" class="alert alert-success"></span>
+            <p>Name : </p> <span id="name" class="alert alert-success"></span>
             <img src="" class="rounded-circle" width="10vw" height="10vh" alt="profile picture of current logged in user" id="profile">
-            <p>Email : </p>
-            <p id="email"></span>
+            <p>Email : </p> <span id="email"></span>
             <button type="button" class="btn btn-danger" onclick="signOut()">Sign Out</button>
         </div>
     </div>
 
     <script src="/js/index.js"></script>
+    <script src="/js/login.js"></script>
     <!-- signin with google -->
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- Bootstrap -->
